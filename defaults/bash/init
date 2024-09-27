@@ -13,4 +13,7 @@ if command -v fzf &> /dev/null; then
   if [[ -f /usr/share/doc/fzf/examples/key-bindings.bash ]]; then
     source /usr/share/doc/fzf/examples/key-bindings.bash
   fi
+  # source /usr/share/bash-completion/completions/fzf
+  eval "$(fzf --bash)"
+  source "$(brew --prefix)/Cellar/fzf/$(fzf --version | cut -d ' ' -f 1)/shell/key-bindings.bash"
 fi

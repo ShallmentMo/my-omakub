@@ -1,5 +1,8 @@
 # Omakub
 
+> [!CAUTION]
+> My-Omakub is a personal project, not an official Basecamp project. Just me trying to support my own macbook. Please read the [SUPPORT_MACOS.md](./SUPPORT_MACOS.md) for the detail.
+
 Turn a fresh Ubuntu installation into a fully-configured, beautiful, and modern web development system by running a single command. That's the one-line pitch for Omakub. No need to write bespoke configs for every essential tool just to get started or to be up on all the latest command-line tools. Omakub is an opinionated take on what Linux can be at its best.
 
 Watch the introduction video and read more at [omakub.org](https://omakub.org).
