@@ -3,9 +3,9 @@ alias ls='eza -lh --group-directories-first --icons=auto'
 alias lsa='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias lta='lt -a'
-alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
-alias fd='fdfind'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 alias cd='z'
+alias c="clear"
 
 # Directories
 alias ..='cd ..'
@@ -17,7 +17,8 @@ alias n='nvim'
 alias g='git'
 alias d='docker'
 alias r='rails'
-alias bat='batcat'
+# alias bat='batcat'
+alias cat='bat'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 
@@ -36,3 +37,58 @@ webm2mp4() {
   output_file="${input_file%.webm}.mp4"
   ffmpeg -i "$input_file" -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 192k "$output_file"
 }
+
+# Bundler
+alias b='bundle'
+alias be='bundle exec'
+alias bi='bundle install'
+
+# Rails
+alias rc='rails console'
+alias rcs='rails console --sandbox'
+alias rd='rails destroy'
+alias rdb='rails dbconsole'
+alias rdc='rails db:create'
+alias rdd='rails db:drop'
+alias rdm='rails db:migrate'
+alias rdmd='rails db:migrate:down'
+alias rdmr='rails db:migrate:redo'
+alias rdms='rails db:migrate:status'
+alias rdmtc='rails db:migrate db:test:clone'
+alias rdmu='rails db:migrate:up'
+alias rdr='rails db:rollback'
+alias rdrs='rails db:reset'
+alias rds='rails db:seed'
+alias rdsl='rails db:schema:load'
+alias rdtc='rails db:test:clone'
+alias rdtp='rails db:test:prepare'
+alias rgen='rails generate'
+alias rgm='rails generate migration'
+alias rlc='rails log:clear'
+alias rmd='rails middleware'
+alias rn='rails notes'
+alias rp='rails plugin'
+alias rr='rails routes'
+alias rrc='rails routes --controller'
+alias rre='rails routes --expanded'
+alias rrg='rails routes --grep'
+alias rru='rails routes --unused'
+alias rs='rails server'
+alias rsb='rails server --bind'
+alias rsd='rails server --debugger'
+alias rsp='rails server --port'
+alias rsts='rails stats'
+alias rt='rails test'
+alias rta='rails test:all'
+alias ru='rails runner'
+
+# Cargo
+alias cg='cargo'
+alias cgr='cargo run'
+alias cgt='cargo test'
+alias cgb='cargo build'
+alias cgbr='cargo build --release'
+alias cgi='cargo init'
+alias cgn='cargo new'
+alias cga='cargo add'
+alias cgf='cargo fmt'
